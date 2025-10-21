@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<script src="carrito.js"></script>
+<body>
+  <div style="position: absolute; top: 20px; left: 40px;">
+        <a href="Catalogo.html" style="
+            background: #222;
+            color: #fff;
+            font-family: 'Roboto', Arial, sans-serif;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        " onmouseover="this.style.background='#444'" onmouseout="this.style.background='#222'">
+            Catalogo
+        </a>
+  <h1>Carrito de Compras</h1>
+  <div id="carritoContainer"></div>
+  <div class="total" id="total"></div>
+  <div id="resumenCompra"></div>
+  <div style="text-align:center;">
+    <button class="vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button class="finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+  </div>
+  
+</body>
+</html>

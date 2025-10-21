@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login y Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="position: absolute; top: 20px; right: 40px;">
+    <a href="inicio.html" style="
+        background: #222;
+        color: #fff;
+        font-family: 'Roboto', Arial, sans-serif;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: background 0.2s;
+    " onmouseover="this.style.background='#444'" onmouseout="this.style.background='#222'">
+          Inicio
+    </a>
+  </div>
+
+  <!-- Tarjeta de inicio de sesión -->
+  <center><div class="card" id="loginCard">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Correo" required>
+      <input type="password" id="loginPassword" placeholder="Contraseña" required>
+      <div class="extra-options">
+        <label><input type="checkbox" id="recordarme"> Recordarme</label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+      <div class="button-group">
+        <button type="submit" class="btn">Ingresar</button>
+        <button type="button" class="btn" onclick="mostrarRegistro()">Crear Usuario</button>
+      </div>
+      
+    </form>
+    <div id="mensajeLogin"></div>
+  </div></center>
+
+  <!-- Tarjeta de registro de usuario -->
+  <center><div class="card" id="registroCard" style="display:none;">
+    <h2>Registro de Usuario</h2>
+    <form id="registroForm">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" placeholder="Apellido" required>
+      <input type="text" id="rut" placeholder="RUT (Opcional)">
+      <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento" required>
+      <input type="password" id="contraseña" placeholder="Contraseña" required>
+      <input type="email" id="correo" placeholder="Correo" required>
+      <div class="button-group">
+        <div class="button-group">
+        <button type="submit" class="btn">Registrar</button>
+        <button type="button" class="btn" onclick="volverLogin()">Volver al Login</button>
+      </div>
+      
+    </form>
+    <div id="mensajeRegistro"></div>
+  </div></center>
+
+  <script src="dd.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div style="position: absolute; top: 20px; left: 40px;">
+    <a href="dd.html" style="
+        background: #222;
+        color: #fff;
+        font-family: 'Roboto', Arial, sans-serif;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: background 0.2s;
+    " onmouseover="this.style.background='#444'" onmouseout="this.style.background='#222'">
+        Iniciar sesión
+    </a>
+  </div>
+
+  <div style="position: absolute; top: 80px; left: 40px;">
+    <a href="carrito.html" style="
+        background: #222;
+        color: #fff;
+        font-family: 'Roboto', Arial, sans-serif;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: background 0.2s;
+    " onmouseover="this.style.background='#444'" onmouseout="this.style.background='#222'">
+        Carrito de compras
+    </a>
+  </div>
+  
+  <h1>Catálogo de Productos</h1>
+    
+  <div class="filtros">
+    <select id="categoriaFiltro">
+      <option value="todos">Todas las categorías</option>
+      <option value="juegos">Juegos de mesa</option>
+      <option value="accesorios">Accesorios</option>
+      <option value="consolas">Consolas</option>
+      <option value="computadores">Computadores gamers</option>
+      <option value="sillas">Sillas gamers</option>
+      <option value="mouse">Mouse</option>
+      <option value="mousepad">Mousepad</option>
+      <option value="poleras">Poleras personalizadas</option>
+      <option value="polerones">Polerones gamers personalizados</option>
+      <option value="servicio">Servicio técnico</option>
+    </select>
+  </div>
+  <div class="productos" id="productos"></div>
+
+  <!-- Conecta EL JSy -->
+  <script src="catalogo.js"></script>
+</body>
+</html>
